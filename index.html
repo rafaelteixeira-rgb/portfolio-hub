@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Mesquita | PortfolioHUB</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background-color: #f4f4f9; 
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        .hub-container { 
+            max-width: 900px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .panel { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+            text-align: left;
+        }
+        .panel-full {
+            grid-column: 1 / -1;
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+        }
+        h1 { margin: 0; font-size: 28px; }
+        h2 { color: #2c3e50; font-size: 20px; margin-top: 0; border-bottom: 2px solid #efefef; padding-bottom: 10px; }
+        p { color: #555; line-height: 1.6; }
+        .status-badge {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+        }
+        .tech-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            color: #666;
+        }
+        .tech-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        /* Responsivo para celulares */
+        @media (max-width: 768px) {
+            .hub-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hub-container">
+        
+        <!-- Topo do Painel -->
+        <div class="panel panel-full">
+            <h1>Rafael Mesquita — PortfolioHUB</h1>
+            <p style="color: #bdc3c7; margin: 5px 0 0 0;">Plataforma Centralizada de Projetos Digitais</p>
+        </div>
+
+        <!-- Coluna 1: Apresentação -->
+        <div class="panel">
+            <h2>Apresentação</h2>
+            <p>Seja bem-vindo ao meu centro de portfólios. Este ambiente foi implantado com o objetivo de centralizar, gerenciar e exibir minhas produções de código de maneira organizada e segura.</p>
+            <p>Desenvolvido com o suporte estratégico e técnico da <strong>IA Google Gemini</strong>.</p>
+        </div>
+
+        <!-- Coluna 2: Status Técnico e Segurança -->
+        <div class="panel">
+            <h2>Status do Sistema</h2>
+            <p><strong>Ambiente:</strong> <span class="status-badge">Online / Produção</span></p>
+            <p><strong>Segurança:</strong> Aplicada e Protegida</p>
+            
+            <h2>Diretrizes Ativas</h2>
+            <ul class="tech-list">
+                <li>Branch Protection (main protegida)</li>
+                <li>GitHub Secrets (Chaves Criptografadas)</li>
+                <li>Hospedagem via GitHub Pages</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
